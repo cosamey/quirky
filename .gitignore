@@ -15,9 +15,11 @@
 /node_modules
 /public/build
 /public/hot
+/public/media
 /public/storage
 /storage/*.key
 /storage/pail
+/storage/temp
 /vendor
 Homestead.json
 Homestead.yaml
