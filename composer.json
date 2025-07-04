@@ -12,6 +12,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.24.1",
+        "larastan/larastan": "^3.5",
         "laravel/pint": "^1.23",
         "mockery/mockery": "^1.6.12",
         "nunomaduro/collision": "^8.8.2",
@@ -43,9 +44,11 @@
         ],
         "lint": "pint",
         "test:lint": "pint --test",
+        "test:type": "phpstan analyse --ansi",
         "test:unit": "pest --compact",
         "test": [
             "@test:lint",
+            "@test:type",
             "@test:unit"
         ]
     },
