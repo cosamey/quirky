@@ -7,12 +7,12 @@
     "license": "MIT",
     "require": {
         "php": "^8.4",
-        "laravel/framework": "^12.21.0",
-        "laravel/nightwatch": "^1.11.4",
+        "laravel/framework": "^12.22.0",
+        "laravel/nightwatch": "^1.11.5",
         "laravel/tinker": "^2.10.1",
         "league/flysystem-aws-s3-v3": "^3.29",
         "spatie/laravel-activitylog": "^4.10.2",
-        "spatie/laravel-backup": "^9.3.3",
+        "spatie/laravel-backup": "^9.3.4",
         "spatie/laravel-data": "^4.17",
         "spatie/laravel-medialibrary": "^11.13",
         "spatie/laravel-pdf": "^1.6",
@@ -45,7 +45,8 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan config:clear",
+            "@php artisan clear-compiled",
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
